@@ -1,0 +1,1125 @@
+#wrap {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fefefe;
+}
+
+#container {
+    box-sizing: border-box;
+    height: 100vh;
+}
+.cont_list {
+    height: 100%;
+    overflow: hidden;
+}
+.mobile {
+    display: none;
+}
+/* .m1 HOME */
+.intro {
+    background-image: url(../img/ullengdo_high.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.m1 {
+    position: relative;
+    height: 85vh;
+    box-sizing: border-box;
+    margin: 100px;
+}
+.m1 > p {
+    text-indent: -99999px;
+}
+.m1 > p:nth-child(1),
+.m1 > p:nth-child(2) {
+    background-color: #00a1dc;
+}
+.m1 > p:nth-child(3),
+.m1 > p:nth-child(4) {
+    background-color: #1a82a8;
+}
+.m1 > p:nth-child(n + 5) {
+    background-color: #000243;
+}
+@keyframes main1 {
+    0% {
+    }
+    100% {
+        height: 50%;
+    }
+}
+.m1 > p:nth-child(1) {
+    position: absolute;
+    top: 20%;
+    left: 12.5%;
+    width: 20px;
+    height: 0;
+    animation-name: main1;
+}
+@keyframes main2 {
+    0% {
+    }
+    100% {
+        width: 65%;
+    }
+}
+.m1 > p:nth-child(2) {
+    position: absolute;
+    top: 20%;
+    left: 12.5%;
+    width: 0;
+    height: 20px;
+    animation-name: main2;
+}
+@keyframes main3 {
+    0% {
+    }
+    100% {
+        width: 65%;
+    }
+}
+.m1 > p:nth-child(3) {
+    position: absolute;
+    bottom: 20%;
+    left: 22.5%;
+    width: 0;
+    height: 20px;
+    animation-name: main3;
+    animation-delay: 1s;
+}
+@keyframes main4 {
+    0% {
+    }
+    100% {
+        height: 50%;
+    }
+}
+.m1 > p:nth-child(4) {
+    position: absolute;
+    top: 30%;
+    left: 87.5%;
+    width: 20px;
+    height: 0;
+    animation-name: main4;
+    animation-delay: 1s;
+}
+@keyframes main5 {
+    0% {
+    }
+    100% {
+        width: 55%;
+    }
+}
+.m1 > p:nth-child(5) {
+    position: absolute;
+    top: 30%;
+    left: 22.5%;
+    width: 0;
+    height: 20px;
+    animation-name: main5;
+    animation-delay: 2s;
+}
+@keyframes main6 {
+    0% {
+    }
+    100% {
+        height: 40%;
+    }
+}
+.m1 > p:nth-child(6) {
+    position: absolute;
+    top: 30%;
+    left: 77.5%;
+    width: 20px;
+    height: 0;
+    animation-name: main6;
+    animation-delay: 3s;
+}
+@keyframes main7 {
+    0% {
+    }
+    100% {
+        width: 55%;
+    }
+}
+.m1 > p:nth-child(7) {
+    position: absolute;
+    bottom: 30%;
+    left: 22.5%;
+    width: 0;
+    height: 20px;
+    animation-name: main7;
+    animation-delay: 3s;
+}
+@keyframes main8 {
+    0% {
+    }
+    100% {
+        height: 40%;
+    }
+}
+.m1 > p:nth-child(8) {
+    position: absolute;
+    top: 30%;
+    left: 22.5%;
+    width: 20px;
+    height: 0;
+    animation-name: main8;
+    animation-delay: 2s;
+}
+.m1 > p {
+    animation-duration: 1s;
+}
+.m1 > div,
+.m1 > p {
+    color: #fff;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes m1_text {
+    0% {
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.m1_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 700;
+    opacity: 0;
+    animation-name: m1_text;
+    animation-delay: 4.2s;
+}
+@keyframes m1_name {
+    0% {
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.m1_name {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: 500;
+    text-shadow: 8px 8px 8px #383839;
+    opacity: 0;
+    animation-name: m1_name;
+    animation-delay: 5.5s;
+}
+.m1_name2 {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: 500;
+    text-shadow: 8px 8px 8px #383839;
+    opacity: 0;
+    animation-name: m1_name;
+    animation-delay: 5.5s;
+}
+.cont_pager {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    z-index: 333;
+}
+.cont_pager span {
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 20%;
+    border: 3px solid #00a1dc;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.cont_pager span::before {
+    position: absolute;
+    right: 24px;
+    top: -5px;
+    width: 150px;
+    text-align: right;
+    display: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+.cont_pager span:nth-child(1)::before {
+    content: 'HOME';
+    color: #fff;
+}
+.cont_pager span:nth-child(2)::before {
+    content: 'ABOUT';
+}
+.cont_pager span:nth-child(3)::before {
+    content: 'SKILL';
+}
+.cont_pager span:nth-child(4)::before {
+    content: 'WORK';
+}
+.cont_pager span:nth-child(5)::before {
+    content: 'CONTACT';
+}
+.cont_pager span:nth-child(6)::before {
+    content: 'Q & A';
+}
+.cont_pager .swiper-pagination-bullet-active {
+    background-color: #00a1dc;
+}
+.cont_pager .swiper-pagination-bullet-active::before {
+    display: block;
+}
+/* .m2 ABOUT */
+.m2 {
+    margin: 5%;
+}
+.m2 > h2 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.4em;
+}
+.m2 > h2 > span {
+    color: #00a1dc;
+    font-weight: 700;
+}
+.m2 > .about_photo {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+.m2 .job {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    text-indent: -99999px;
+}
+.m2 > .about_photo > .job:nth-child(1) {
+    background-image: url(../img/portfolio_profile02.png);
+}
+.m2 > .about_photo > .job:nth-child(2) {
+    background-image: url(../../../img/20210427_182152.jpg);
+    background-position: 10% 80%;
+}
+.m2 > .about_photo > .job:nth-child(3) {
+    background-image: url(../../../img/1643026758045-0.jpg);
+    background-position: center 50%;
+}
+.m2 > .about_photo > .job:nth-child(4) {
+    background-image: url(../../../img/10058.jpg);
+}
+.m2_text {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    font-size: 25px;
+    line-height: 2em;
+}
+.m2_text > p {
+    margin: 0 0 0 0;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2em;
+    color: #232329;
+}
+.m2_text > ul {
+    position: relative;
+    width: 50%;
+    margin-left: 17%;
+    font-weight: 500;
+    list-style: square;
+}
+.m2_text > ul::before {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    content: '';
+    display: block;
+    width: 2px;
+    height: 260px;
+    background-color: #232329;
+}
+.m2_text > ul > li {
+    color: #434349;
+}
+.m2_text > ul > li:hover > span {
+    font-weight: 700;
+    color: #232329;
+}
+/* .m3 SKILL */
+.m3 {
+    margin: 2% auto;
+    color: #232329;
+}
+.m3 > h2 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.4em;
+    color: #232329;
+}
+.m3 > h2 > span {
+    color: #00a1dc;
+}
+.m3 > .m3_skill {
+    margin: 80px 5%;
+}
+.skill {
+    margin: 2%;
+}
+.skill > h3 {
+    margin-bottom: 2%;
+    font-size: 25px;
+    line-height: 1em;
+    color: #232329;
+}
+.graph {
+    position: relative;
+    height: 50px;
+    padding-left: 1%;
+}
+.graph > p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    text-indent: -99999px;
+}
+.graph > p:nth-child(1) {
+    width: 95%;
+    height: 30%;
+    border-radius: 8px;
+    background-color: #1a82a8;
+}
+.graph > p:nth-child(2) {
+    width: 5%;
+    height: 70%;
+    border-radius: 8px;
+    background-color: #00a1dc;
+}
+.curriculum {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+/* .m4 WORK */
+.m4 {
+    margin: 7%;
+    color: #232329;
+}
+.m4 > h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.m4 > div > ul {
+    display: flex;
+    justify-content: center;
+}
+.m4 > div > ul > li {
+    margin: 80px 1%;
+}
+.work_box {
+    width: 70vh;
+    height: 70vh;
+    border: 5px solid #1a82a8;
+}
+.work_box > h3 {
+    margin-top: 3%;
+    text-align: center;
+    color: #000243;
+    font-size: 35px;
+    line-height: 1em;
+}
+.work_box > p {
+    width: 27%;
+    line-height: 100%;
+    box-sizing: border-box;
+    padding: 1.6%;
+    margin: 3% auto;
+    border: 2px solid #00a1dc;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000243;
+}
+@keyframes btn_hover {
+    0% {
+    }
+    100% {
+        background-color: #00a1dc;
+        color: #fff;
+    }
+}
+.work_box > p:hover {
+    animation-name: btn_hover;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.story {
+    display: none;
+    box-sizing: border-box;
+    margin: 0 2%;
+    padding: 3% 2%;
+    border-radius: 20px;
+    background-color: rgba(172, 233, 255, 0.85);
+}
+.story > p {
+    font-size: 20px;
+    text-align: center;
+}
+.story > h4 {
+    margin: 1% 0 4% 0;
+    font-size: 25px;
+    line-height: 1em;
+    text-align: center;
+}
+.story > div {
+    font-size: 20px;
+    line-height: 1.7em;
+}
+.story > div > h5 {
+    font-size: 21px;
+}
+.luce > div > h5:nth-child(5) > span {
+    font-weight: 400;
+}
+/* .m5 CONTACT */
+.m5 {
+    position: relative;
+    margin: 5% 15%;
+}
+.m5 > h2 {
+    font-size: 35px;
+    line-height: 1.4em;
+}
+.m5 > h2 > span {
+    color: #00a1dc;
+}
+.m5 > div:nth-child(2) {
+    margin: 5% 0;
+}
+.m5 > div {
+    color: #232329;
+}
+.m5 > div > h3 {
+    font-size: 24px;
+    line-height: 1em;
+}
+.m5 > div > .comment {
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+.comment > span {
+    font-size: 22px;
+    font-weight: 500;
+    color: #00a1dc;
+}
+.m5 > div:nth-child(3) {
+    position: absolute;
+    top: 130%;
+    right: 0;
+}
+.m5 > div:nth-child(3) > h3 {
+    margin-bottom: 6%;
+    font-size: 25px;
+}
+.m5 > div:nth-child(3) > p {
+    margin: 3% 0;
+    font-size: 20px;
+    text-align: center;
+}
+.m5 > div:nth-child(3) > p:nth-child(2):hover,
+.m5 > div:nth-child(3) > p:nth-child(3):hover,
+.m5 > div:nth-child(3) > p:nth-child(4):hover {
+    font-weight: 700;
+}
+.contact_photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url(../img/portfolio_profile02.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.enter {
+    display: none;
+}
+.big_font {
+    font-size: 40px;
+    font-weight: 700;
+    color: #00a1dc;
+}
+/* m6 질의 응답 */
+.m6 {
+    margin: 5% 15%;
+}
+.m6 > h1 {
+    margin-top: 30%;
+    text-align: center;
+    font-size: 100px;
+}
+.qr_code {
+    position: absolute;
+    top: 106%;
+    left: 0;
+    background-image: url(../img/QRCode.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+.last_text_box {
+    position: absolute;
+    top: 120%;
+    left: 18.5%;
+    border: 5px solid #00a1dc;
+    border-radius: 20px;
+    padding: 20px;
+}
+.last_text_box > span {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+/* PC 1920px 끝 */
+@media (max-width: 1260px) {
+    /* .m1 HOME */
+    .m1 > p:nth-child(1),
+    .m1 > p:nth-child(4),
+    .m1 > p:nth-child(6),
+    .m1 > p:nth-child(8) {
+        width: 16px;
+    }
+    .m1 > p:nth-child(2),
+    .m1 > p:nth-child(3),
+    .m1 > p:nth-child(5),
+    .m1 > p:nth-child(7) {
+        height: 16px;
+    }
+    .m1_text {
+        font-size: 80px;
+    }
+    .m1_name {
+        font-size: 50px;
+    }
+    .cont_pager span {
+        width: 8px;
+        height: 8px;
+        margin: 25px 0;
+    }
+    .cont_pager span::before {
+        font-size: 20px;
+    }
+    /* .m2 ABOUT */
+    .m2 > .about_photo {
+        margin: 40px auto;
+    }
+    .m2_text {
+        margin: 40px 0;
+        font-size: 22px;
+    }
+    .m2_text > p {
+        margin: 5% 0 0 18%;
+        width: 30%;
+        font-size: 25px;
+    }
+    .m2_text > p > span > strong {
+        font-size: 30px;
+    }
+    .m2_text > ul {
+        width: 70%;
+        margin-left: 17%;
+        font-size: 21px;
+    }
+    .m2_text > ul::before {
+        left: -10%;
+        height: 230px;
+    }
+    /* .m3 SKILL */
+    .m3 {
+        margin: 4% auto;
+    }
+    .m3 > .m3_skill {
+        margin: 50px 5%;
+    }
+    /* .m4 WORK */
+    .work_box > h3 {
+        margin-top: 8%;
+    }
+    .work_box {
+        width: 37vh;
+    }
+    .work_box > p {
+        width: 38%;
+        font-size: 16px;
+    }
+    .story > h4 {
+        font-size: 17px;
+    }
+    .story > div {
+        font-size: 14px;
+    }
+    .story > div > h5 {
+        font-size: 15px;
+    }
+    .luce > div > h5:nth-child(5) > span {
+        font-size: 14px;
+    }
+    /* .m5 CONTACT */
+    .m5 {
+        margin: 7% 15%;
+    }
+    .m5 > h2 {
+        font-size: 32px;
+    }
+    .m5 > div > h3 {
+        font-size: 22px;
+        margin-bottom: 3%;
+    }
+    .m5 > div > .comment {
+        width: 90%;
+        font-size: 18px;
+        line-height: 2em;
+    }
+    .comment > span {
+        font-size: 22px;
+    }
+    .m5 > div:nth-child(3) {
+        top: 140%;
+        right: -13%;
+    }
+    .m5 > div:nth-child(3) > h3 {
+        font-size: 30px;
+    }
+    .contact_photo {
+        right: -10%;
+        width: 300px;
+        height: 300px;
+    }
+}
+/* PC 1260px 끝 */
+@media (max-width: 768px) {
+    /* .m1 HOME */
+    .m1 > p:nth-child(1),
+    .m1 > p:nth-child(4),
+    .m1 > p:nth-child(6),
+    .m1 > p:nth-child(8) {
+        width: 13px;
+    }
+    .m1 > p:nth-child(2),
+    .m1 > p:nth-child(3),
+    .m1 > p:nth-child(5),
+    .m1 > p:nth-child(7) {
+        height: 13px;
+    }
+    .m1_text {
+        font-size: 45px;
+    }
+    .m1_name {
+        font-size: 35px;
+    }
+    .cont_pager {
+        right: 5%;
+    }
+    .cont_pager span {
+        width: 8px;
+        height: 8px;
+    }
+    /* .m2 ABOUT */
+    .m2 {
+        margin: 13% 0;
+    }
+    .m2 > h2 {
+        font-size: 32px;
+    }
+    .m2 > .about_photo {
+        margin: 50px auto;
+    }
+    .m2_text {
+        margin: 50px auto;
+        font-size: 20px;
+    }
+    .m2_text > p {
+        margin: 20% 0 0 10%;
+        width: 22%;
+        font-size: 24px;
+    }
+    .m2_text > p > span > strong {
+        font-size: 35px;
+    }
+    .m2_text > ul {
+        width: 33%;
+        margin-left: 8%;
+        font-size: 21px;
+    }
+    .m2_text > ul::before {
+        display: none;
+    }
+    /* .m3 SKILL */
+    .m3 {
+        margin: 10% auto;
+    }
+    .m3 > h2 {
+        font-size: 28px;
+    }
+    .m3 > .m3_skill {
+        margin: 100px 5%;
+    }
+    .skill {
+        margin: 7% 0;
+    }
+    .skill > h3 {
+        font-size: 22px;
+    }
+    /* .m4 WORK */
+    .m4 {
+        margin: 5% 7%;
+    }
+    .m4 > h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .m4 > div > ul {
+        display: block;
+        justify-content: center;
+    }
+    .m4 > div > ul > li {
+        margin: 15px 1%;
+    }
+    .work_box {
+        width: 60vh;
+        height: 29vh;
+    }
+    .work_box > h3 {
+        margin-top: 1%;
+        font-size: 25px;
+    }
+    .work_box > p {
+        width: 22%;
+        height: 10%;
+        margin: 2% auto 1% auto;
+        padding: 0%;
+    }
+    .story {
+        margin: 0 2%;
+        padding: 1% 2%;
+    }
+    .story > p {
+        text-align: center;
+    }
+    .story > h4 {
+        font-size: 14px;
+    }
+    .story > div {
+        font-size: 13px;
+        line-height: 1.3em;
+    }
+    .story > div > h5 {
+        font-size: 13px;
+    }
+    .luce > div > p:nth-child(4) > br {
+        display: none;
+    }
+    .luce > div > h5:nth-child(5) > span {
+        font-weight: 400;
+    }
+    /* .m5 CONTACT */
+    .m5 {
+        margin: 15% 10%;
+    }
+    .m5 > h2 {
+        font-size: 28px;
+        line-height: 1.8em;
+    }
+    .m5 > div:nth-child(2) {
+        margin: 8% 0;
+    }
+    .m5 > div {
+        color: #232329;
+    }
+    .m5 > div > h3 {
+        font-size: 20px;
+        line-height: 1em;
+    }
+    .m5 > div > .comment {
+        width: 83%;
+        margin-top: 5%;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
+    .comment > span {
+        font-size: 20px;
+    }
+    .m5 > div:nth-child(3) {
+        position: absolute;
+        top: 140%;
+        right: -5%;
+    }
+    .m5 > div:nth-child(3) > h3 {
+        font-size: 25px;
+    }
+    .contact_photo {
+        top: 120%;
+        left: 0;
+        width: 280px;
+        height: 280px;
+    }
+}
+/* 테블릿 768px 끝 */
+@media (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+    .no_mobile {
+        display: none;
+    }
+    /* .m1 HOME */
+    .m1 > p:nth-child(1),
+    .m1 > p:nth-child(4),
+    .m1 > p:nth-child(6),
+    .m1 > p:nth-child(8) {
+        width: 10px;
+    }
+    .m1 > p:nth-child(2),
+    .m1 > p:nth-child(3),
+    .m1 > p:nth-child(5),
+    .m1 > p:nth-child(7) {
+        height: 10px;
+    }
+    .m1_text {
+        top: 47%;
+        left: 10%;
+        transform: translate(0);
+        transform: rotate(90deg);
+        font-size: 30px;
+    }
+    .m1_name {
+        left: 75%;
+        width: 100%;
+        transform: translateX(-50%);
+        font-size: 22px;
+    }
+    .cont_pager {
+        right: 5%;
+    }
+    .cont_pager span {
+        width: 8px;
+        height: 8px;
+    }
+    .cont_pager span::before {
+        font-size: 18px;
+    }
+    .cont_pager span:nth-child(4)::before {
+        content: 'WORK 1';
+    }
+    .cont_pager span:nth-child(5)::before {
+        content: 'WORK 2';
+    }
+    .cont_pager span:nth-child(6)::before {
+        content: 'WORK 3';
+    }
+    .cont_pager span:nth-child(7)::before {
+        content: 'CONTACT';
+    }
+    /* .m2 ABOUT */
+    .m2 {
+        margin: 10% auto;
+    }
+    .m2 > h2 {
+        font-size: 20px;
+        line-height: 1.8em;
+    }
+    .m2 > .about_photo {
+        width: 250px;
+        height: 250px;
+        margin: 50px auto;
+    }
+    .m2_text {
+        display: block;
+        margin: 50px auto;
+        font-size: 18px;
+        line-height: 2em;
+    }
+    .m2_text > p {
+        margin: 15% auto;
+        width: 50%;
+        font-size: 23px;
+    }
+    .m2_text > p > span > strong {
+        font-size: 30px;
+    }
+    .m2_text > ul {
+        width: 78%;
+        margin-left: 15%;
+        font-size: 18px;
+    }
+    .m2_text > ul::before {
+        display: none;
+    }
+    /* .m3 SKILL */
+    .m3 {
+        margin: 15% auto;
+    }
+    .m3 > h2 {
+        font-size: 20px;
+        line-height: 2em;
+    }
+    .m3 > .m3_skill {
+        margin: 70px 5%;
+    }
+    .skill {
+        margin: 8%;
+    }
+    .skill > h3 {
+        margin-bottom: 5%;
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+    .graph {
+        position: relative;
+        height: 60px;
+        padding-left: 2%;
+    }
+    /* .m4 WORK */
+    .mobile {
+        box-sizing: border-box;
+        padding: 20% auto;
+    }
+    .mobile > h2 {
+        margin: 10% auto;
+        font-size: 22px;
+        text-align: center;
+    }
+    .m4_mobile {
+        margin: 10px auto;
+    }
+    .work_box {
+        width: 80vw;
+        height: 85vh;
+    }
+    .work_box > h3 {
+        margin-top: 25%;
+        text-align: center;
+        color: #000243;
+        font-size: 20px;
+        line-height: 1em;
+    }
+    .work_box > p {
+        width: 35%;
+        height: 5%;
+        padding: 1.6%;
+        margin: 10% auto;
+        border: 3px solid #00a1dc;
+        font-size: 18px;
+    }
+    .story {
+        display: none;
+        box-sizing: border-box;
+        margin: 0 2%;
+        padding: 8% 2%;
+        border-radius: 20px;
+        background-color: rgba(172, 233, 255, 0.85);
+    }
+    .story > p {
+        font-size: 20px;
+    }
+    .story > h4 {
+        margin: 5% 0 4% 0;
+        font-size: 20px;
+        line-height: 1em;
+        text-align: center;
+    }
+    .story > div {
+        font-size: 18px;
+        line-height: 1.6em;
+    }
+    .story > div > h5 {
+        font-size: 18px;
+    }
+    .luce > div > h5:nth-child(5) > span {
+        font-weight: 400;
+    }
+    /* .m5 CONTACT */
+    .m5 {
+        margin: 10% 5%;
+    }
+    .m5 > h2 {
+        font-size: 18px;
+        line-height: 2em;
+    }
+    .m5 > div:nth-child(2) {
+        margin: 10% 0;
+    }
+    .m5 > div > h3 {
+        font-size: 18px;
+        line-height: 1.6em;
+    }
+    .enter {
+        display: block;
+    }
+    .m5 > div > .comment {
+        width: 65%;
+        margin-top: 6%;
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+    .comment > span {
+        font-size: 18px;
+    }
+    .m5 > div:nth-child(3) {
+        position: absolute;
+        top: 110%;
+        right: 5%;
+    }
+    .m5 > div:nth-child(3) > h3 {
+        margin-bottom: 6%;
+        font-size: 25px;
+        text-align: right;
+    }
+    .m5 > div:nth-child(3) > p {
+        margin: 3% 0;
+        font-size: 18px;
+        text-align: right;
+    }
+    .contact_photo {
+        position: absolute;
+        top: 110%;
+        right: 0;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-image: url(../img/portfolio_profile02.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
